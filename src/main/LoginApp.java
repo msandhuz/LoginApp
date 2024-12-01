@@ -17,7 +17,7 @@ public class LoginApp extends JFrame {
     private static final String DB_PASSWORD = "Zainab123!";
 
     public LoginApp() {
-        setTitle("Login Screen");
+        setTitle("Login Screen2");
         setSize(350, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
