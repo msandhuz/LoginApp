@@ -19,14 +19,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Set up Java using AdoptOpenJDK
-      - name: Set up JDK 11
+      # Set up AdoptOpenJDK 11 (Ensure AdoptOpenJDK is supported)
+      - name: Set up JDK 11 (AdoptOpenJDK)
         uses: actions/setup-java@v3
         with:
           java-version: '11'
-          distribution: 'adoptopenjdk'  # Use the 'adoptopenjdk' distribution
+          distribution: 'adoptopenjdk'  # Correct distribution name
 
-      # Run unit tests using Maven (adjust for your build tool)
+      # Run Maven tests
       - name: Run tests
         run: |
           mvn install
